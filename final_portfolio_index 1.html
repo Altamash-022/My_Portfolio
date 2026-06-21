@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sk Altamash Ali | Portfolio</title>
+<style>
+:root{
+--bg:#0f172a;--card:#1e293b;--text:#ffffff;--accent:#38bdf8;
+}
+body.light{
+--bg:#f8fafc;--card:#ffffff;--text:#0f172a;--accent:#0284c7;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);transition:.3s}
+.container{width:90%;max-width:1100px;margin:auto}
+header{position:sticky;top:0;background:var(--card);padding:15px 0;z-index:100}
+nav{display:flex;justify-content:space-between;align-items:center}
+nav ul{display:flex;gap:15px;list-style:none;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--text)}
+.logo{font-size:24px;font-weight:bold;color:var(--accent)}
+
+.theme-switch{position:relative;display:inline-block;width:60px;height:32px}
+.theme-switch input{opacity:0;width:0;height:0}
+.slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:#334155;transition:.4s;border-radius:34px}
+.slider:before{
+content:"🌙";position:absolute;height:24px;width:24px;left:4px;bottom:4px;
+background:white;transition:.4s;border-radius:50%;
+display:flex;align-items:center;justify-content:center;font-size:12px
+}
+input:checked + .slider{background:#38bdf8}
+input:checked + .slider:before{transform:translateX(28px);content:"☀️"}
+
+.hero{text-align:center;padding:80px 20px}
+.hero img{
+width:180px;height:180px;border-radius:50%;
+object-fit:cover;border:4px solid var(--accent)
+}
+.hero h1{margin-top:15px;font-size:42px}
+.hero p{margin-top:10px}
+
+.btn{
+display:inline-block;margin-top:15px;padding:10px 20px;
+background:var(--accent);color:#000;text-decoration:none;border-radius:6px;font-weight:bold
+}
+
+section{padding:50px 0}
+h2{color:var(--accent);margin-bottom:20px}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px
+}
+
+.card{
+background:var(--card);
+padding:20px;
+border-radius:10px;
+transition:.3s;
+}
+
+.card img{
+width:100%;
+max-width:100%;
+height:auto;
+display:block;
+border-radius:10px;
+}
+
+#internships .card img{
+height:260px;
+object-fit:cover;
+}
+
+
+@media(max-width:768px){
+nav{flex-direction:column;gap:10px}
+.hero h1{font-size:30px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">Altamash</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<label class="theme-switch">
+<input type="checkbox" id="themeToggle">
+<span class="slider"></span>
+</label>
+
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<img src="photo.jpeg" alt="Profile Photo">
+<h1>Sk Altamash Ali</h1>
+<p>BCA Student | Aspiring Web Developer | Full Stack Learner</p>
+<a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<h2>About Me</h2>
+<p>
+I am a BCA student at The Neotia University. I am passionate about web development,
+software engineering and building practical projects. I enjoy learning new technologies
+and developing real-world solutions.
+</p>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card">HTML</div>
+<div class="card">CSS</div>
+<div class="card">JavaScript</div>
+<div class="card">Node.js</div>
+<div class="card">Python</div>
+<div class="card">MongoDB</div>
+<div class="card">Git & GitHub</div>
+<div class="card">Responsive Design</div>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+<h2>Projects</h2>
+<div class="card">
+<h3>Daily Expense Tracking System</h3>
+<p>Web application for tracking and managing expenses.</p>
+<p><b>Tech:</b> HTML, CSS, JavaScript, Node.js, MongoDB</p>
+<a class="btn" href="https://github.com/Altamash-022" target="_blank">View GitHub</a>
+</div>
+</div>
+</section>
+<section id="internships">
+<div class="container">
+
+<h2>Internships</h2>
+
+<div class="grid">
+
+<!-- WEBEL Internship -->
+
+<div class="card">
+<a href="internships/WEBEL_Internship.jpg" target="_blank">
+<img src="internships/WEBEL_Internship.jpg"
+alt="WEBEL Internship Certificate"
+style="width:100%;max-width:100%;display:block;border-radius:10px;margin-bottom:15px;">
+</a>
+
+<h3>Summer Internship - WEBEL</h3>
+
+<p>
+Completed a 6-week Summer Internship at
+West Bengal Electronics Industry Development Corporation Ltd. (WEBEL).
+Worked on <strong>Advanced Linux for Present & Future</strong> and gained
+practical exposure to Linux operating systems, command-line tools,
+system administration concepts, and industry workflows.
+</p>
+
+<br>
+
+<h4>Skills Gained</h4>
+
+<ul style="padding-left:20px;">
+<li>Linux Fundamentals</li>
+<li>Linux Command Line</li>
+<li>File System Management</li>
+<li>Shell Commands</li>
+<li>System Administration Basics</li>
+<li>Problem Solving</li>
+<li>Industry Exposure</li>
+</ul>
+
+</div>
+
+<!-- DataSpace Internship -->
+
+<div class="card">
+<a href="internships/Digital_Marketing_Internship.jpg" target="_blank">
+<img src="internships/Digital_Marketing_Internship.jpg"
+alt="Digital Marketing Internship"
+style="width:100%;max-width:100%;display:block;border-radius:10px;margin-bottom:15px;">
+</a>
+
+<h3>Digital Marketing Internship</h3>
+
+<p>
+Successfully completed a 1-Month Digital Marketing Internship
+organized by DataSpace Academy in collaboration with
+The Neotia University.
+Worked on digital marketing concepts, branding strategies,
+social media promotion, content planning, and online engagement.
+</p>
+
+<br>
+
+<h4>Skills Gained</h4>
+
+<ul style="padding-left:20px;">
+<li>Digital Marketing</li>
+<li>Social Media Marketing</li>
+<li>Brand Awareness</li>
+<li>Content Strategy</li>
+<li>Communication Skills</li>
+<li>Team Collaboration</li>
+<li>Professional Networking</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="certificates">
+<div class="container">
+<h2>Certificates</h2>
+<div class="grid">
+<div class="card">
+<a href="certificates/Communication_Skills_IBM.jpg" target="_blank">
+<img src="certificates/Communication_Skills_IBM.jpg" alt="IBM Communication Skills" style="width:100%;border-radius:10px;" />
+</a>
+<h3>Communication Skills</h3>
+<p>IBM SkillsBuild</p>
+</div>
+<div class="card">
+<a href="certificates/Viksit_Bharat_Young_Leaders.jpg" target="_blank">
+<img src="certificates/Viksit_Bharat_Young_Leaders.jpg" alt="Viksit Bharat" style="width:100%;border-radius:10px;" />
+</a>
+<h3>Viksit Bharat Young Leaders</h3>
+<p>Government of India Initiative</p>
+</div>
+<div class="card">
+<a href="certificates/Business_Analytics_GUVI.jpg" target="_blank">
+<img src="certificates/Business_Analytics_GUVI.jpg" alt="Business Analytics" style="width:100%;border-radius:10px;" />
+</a>
+<h3>Business Analytics</h3>
+<p>GUVI & HCL</p>
+</div>
+<div class="card">
+<a href="certificates/Internet_of_Things_Infosys.jpg" target="_blank">
+<img src="certificates/Internet_of_Things_Infosys.jpg" alt="IoT" style="width:100%;border-radius:10px;" />
+</a>
+<h3>Internet of Things (IoT)</h3>
+<p>Infosys Springboard</p>
+</div>
+<div class="card">
+<a href="certificates/Git_and_GitHub_WsCube.jpg" target="_blank">
+<img src="certificates/Git_and_GitHub_WsCube.jpg" alt="Git and GitHub" style="width:100%;border-radius:10px;" />
+</a>
+<h3>Git & GitHub</h3>
+<p>WsCube Tech</p>
+</div>
+<div class="card">
+<a href="certificates/Power_BI_Data_Visualization.jpg" target="_blank">
+<img src="certificates/Power_BI_Data_Visualization.jpg" alt="Power BI" style="width:100%;border-radius:10px;" />
+</a>
+<h3>Power BI Data Visualization</h3>
+<p>The Neotia University</p>
+</div>
+<div class="card">
+<a href="certificates/Software_Engineering_and_Agile.jpg" target="_blank">
+<img src="certificates/Software_Engineering_and_Agile.jpg" alt="Software Engineering" style="width:100%;border-radius:10px;" />
+</a>
+<h3>Software Engineering & Agile</h3>
+<p>Infosys Springboard</p>
+</div>
+<div class="card">
+<a href="certificates/Python_Django_MongoDB.jpg" target="_blank">
+<img src="certificates/Python_Django_MongoDB.jpg" alt="Python Django MongoDB" style="width:100%;border-radius:10px;" />
+</a>
+<h3>Python, Django & MongoDB</h3>
+<p>Data Modelling for AI Applications</p>
+</div>
+<div class="card">
+<a href="certificates/Advance_Java_and_Oracle.jpg" target="_blank">
+<img src="certificates/Advance_Java_and_Oracle.jpg" alt="Advanced Java" style="width:100%;border-radius:10px;" />
+</a>
+<h3>Advanced Java & Oracle</h3>
+<p>AI Labs Workshop</p>
+</div>
+<div class="card">
+<a href="certificates/AWS_Foundations_and_Practical_Applications.jpg" target="_blank">
+<img src="certificates/AWS_Foundations_and_Practical_Applications.jpg" alt="AWS" style="width:100%;border-radius:10px;" />
+</a>
+<h3>AWS Foundations</h3>
+<p>DataSpace Academy</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2>Contact</h2>
+
+<p>📧 Email:
+<a href="mailto:skaltamashali970@gmail.com">skaltamashali970@gmail.com</a>
+</p><br>
+
+<p>💻 GitHub:
+<a href="https://github.com/Altamash-022" target="_blank">github.com/Altamash-022</a>
+</p><br>
+
+<p>🔗 LinkedIn:
+<a href="https://www.linkedin.com/in/sk-altamash-ali-a5078a34b" target="_blank">View Profile</a>
+</p>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Sk Altamash Ali. All Rights Reserved.</p>
+</footer>
+
+<script>
+const toggle = document.getElementById("themeToggle");
+
+if(localStorage.getItem("theme")==="light"){
+document.body.classList.add("light");
+toggle.checked=true;
+}
+
+toggle.addEventListener("change",()=>{
+if(toggle.checked){
+document.body.classList.add("light");
+localStorage.setItem("theme","light");
+}else{
+document.body.classList.remove("light");
+localStorage.setItem("theme","dark");
+}
+});
+</script>
+
+</body>
+</html>
