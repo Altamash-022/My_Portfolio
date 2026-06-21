@@ -54,11 +54,17 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:15px
 }
 
-.card{
+.card.card{
 background:var(--card);
 padding:20px;
 border-radius:10px;
-transition:.3s;
+transition:all 0.3s ease;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 .card img{
@@ -67,6 +73,11 @@ max-width:100%;
 height:auto;
 display:block;
 border-radius:10px;
+transition:all 0.3s ease;
+}
+
+.card img:hover{
+transform:scale(1.03);
 }
 
 #internships .card img{
