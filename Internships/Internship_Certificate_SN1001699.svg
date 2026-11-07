@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Internship Completed Certificate</title>
+  <desc id="desc">Certificate for Soft Nexis Technology internship with certificate number SN1001699.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect x="60" y="60" width="1080" height="680" rx="18" fill="#ffffff" stroke="#1f2937" stroke-width="3"/>
+  <text x="600" y="150" text-anchor="middle" font-size="38" font-family="Arial, Helvetica, sans-serif" fill="#0f172a" letter-spacing="2">INTERNSHIP COMPLETED CERTIFICATE</text>
+  <line x1="260" y1="175" x2="940" y2="175" stroke="#94a3b8" stroke-width="2"/>
+  <text x="600" y="245" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#334155">This is to certify that</text>
+  <text x="600" y="330" text-anchor="middle" font-size="42" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#0f172a">Altamash Siddique</text>
+  <line x1="350" y1="360" x2="850" y2="360" stroke="#94a3b8" stroke-width="2"/>
+  <text x="600" y="420" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#475569">has successfully completed the Web Designer Intern program at</text>
+  <text x="600" y="470" text-anchor="middle" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#1d4ed8">Soft Nexis Technology</text>
+  <text x="600" y="525" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#475569">June 2026 – August 2026</text>
+  <text x="600" y="590" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#475569">Certificate No.: SN1001699</text>
+  <text x="600" y="665" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#64748b">Internship_Certificate_SN1001699</text>
+</svg>
